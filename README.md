@@ -14,7 +14,7 @@
 
 Welcome to the **Computer Vision & Deep Learning Engineering Suite** curated and developed by **Ayan Rajput**.
 
-This repository contains enterprise-grade deep learning architectures, convolutional neural network (CNN) pipelines, and statistical predictive modeling workflows engineered for real-world mission-critical performance. Every subproject is implemented with production coding conventions, rigorous mathematical foundations, and reproducible evaluation benchmarks.
+This repository contains enterprise-grade deep learning architectures, convolutional neural network (CNN) pipelines, and statistical machine learning workflows engineered for real-world mission-critical performance. Every subproject is implemented with production coding conventions, rigorous mathematical foundations, and reproducible evaluation benchmarks.
 
 ---
 
@@ -41,6 +41,16 @@ computer-vision-deep-learning-cnn/
 │   ├── pipeline.py                           # Automated feature engineering & target encoding
 │   ├── train_risk_model.py                   # XGBoost / LightGBM gradient-boosted ensemble
 │   └── README.md                             # Cost matrix optimization & business ROI impact
+│
+├── 📁 04-cardiovascular-disease-prediction-ml/# Clinical Cardiology Diagnostic Intelligence
+│   ├── cardio_pipeline.py                    # Calibrated biometric classification & scoring
+│   ├── train_clinical_model.py               # Random Forest & Gradient Boosting ROC-AUC
+│   └── README.md                             # Clinical sensitivity & biomarker attribution
+│
+├── 📁 05-ford-automotive-valuation-regression/# Secondary Market Vehicle Valuation & Depreciation
+│   ├── valuation_pipeline.py                 # Multi-variable depreciation & pricing elasticity
+│   ├── train_valuation_model.py              # Gradient Boosted Trees & Ridge Regularization
+│   └── README.md                             # Market residual diagnostics & RMSE benchmarks
 │
 ├── 📁 docs/assets/                           # Real project telemetry, training curves & overlays
 │   ├── video_segmentation_task.png           # Fine-grained temporal action mask overlay
@@ -76,15 +86,27 @@ computer-vision-deep-learning-cnn/
 - **Problem**: Predicting late delivery risks (`Late_delivery_risk`) across global multi-tier logistics orders.
 - **Result**: **0.978 ROC-AUC** with $41\%$ reduction in missed SLA penalties.
 
+### 4. 🫀 Clinical Cardiovascular Risk Prediction
+- **Architecture**: Random Forest & Gradient Boosting with Calibrated Biomarker Attributions.
+- **Problem**: Classifying early cardiovascular risk from resting blood pressure, cholesterol, fluoroscopy vessels, and ST depression.
+- **Result**: **91.4% ROC-AUC** with **88.2% clinical sensitivity** (minimizing diagnostic false negatives).
+
+### 5. 🚗 Ford Automotive Secondary Market Price Regression
+- **Architecture**: Gradient Boosted Trees and Ridge Regularization.
+- **Problem**: Resolving pricing opacity in secondary vehicle markets by modeling compound non-linear depreciation curves across mileage, displacement, and fuel efficiency.
+- **Result**: **$384.50 MAE** with **95.8% $R^2$ variance explained**.
+
 ---
 
 ## 📊 Benchmark Matrix
 
-| Subproject | Baseline Metric | Optimized Metric | Delta | Primary Framework |
-| :--- | :---: | :---: | :---: | :---: |
-| **01 Video Segmentation** | 71.4% MoF | **84.8% MoF** | `+13.4%` | PyTorch / OpenCV |
-| **02 SE-ResNet Vision** | 88.4% Top-1 | **99.2% Top-1** | `+10.8%` | PyTorch / AMP |
-| **03 Supply Chain Risk** | 0.812 ROC-AUC | **0.978 ROC-AUC** | `+0.166` | XGBoost / Scikit-Learn |
+| Subproject | Domain | Baseline Metric | Optimized Metric | Delta | Primary Framework |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **01 Video Segmentation** | Computer Vision / CNN | 71.4% MoF | **84.8% MoF** | `+13.4%` | PyTorch / OpenCV |
+| **02 SE-ResNet Vision** | Deep Learning / Optimization | 88.4% Top-1 | **99.2% Top-1** | `+10.8%` | PyTorch / AMP |
+| **03 Supply Chain Risk** | Machine Learning / Operations | 0.812 ROC-AUC | **0.978 ROC-AUC** | `+0.166` | XGBoost / Scikit-Learn |
+| **04 Cardiovascular Risk**| Clinical Healthcare AI | 0.825 ROC-AUC | **0.914 ROC-AUC** | `+0.089` | Scikit-Learn / Ensemble |
+| **05 Vehicle Valuation** | Pricing & Econometrics | 84.2% $R^2$ | **95.8% $R^2$** | `+11.6%` | Gradient Boosting / Ridge |
 
 ---
 
